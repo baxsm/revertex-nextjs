@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const Background: FC = () => {
   return (
-    <div className="absolute inset-x-0 top-0 min-h-screen h-full w-screen flex mx-auto max-w-6xl px-8 z-0">
+    <div className="absolute inset-x-0 top-0 min-h-screen h-full w-screen flex mx-auto max-w-6xl px-8 z-0 mt-24">
       {[...Array(6)].map((_, index) => (
         <div
           key={index}

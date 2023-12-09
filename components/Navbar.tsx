@@ -5,13 +5,16 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { MoveRight } from "lucide-react";
+import Logo from "./Logo";
 
 const Navbar: FC = ({}) => {
   return (
-    <nav className="sticky top-0 inset-x-0 w-full z-20 bg-background h-24 flex items-center border-b-[1px] border-border">
+    <nav className="sticky top-0 inset-x-0 w-full z-20 bg-background/[0.98] h-24 flex items-center border-b-[1px] border-border">
       <MaxWidthWrapper>
         <div className="w-full flex justify-between items-center">
-          <div className="">Logo</div>
+          <div className="">
+            <Logo className="mt-0 text-2xl"/>
+          </div>
           <div className="flex items-center gap-8">
             <Link
               href="#"

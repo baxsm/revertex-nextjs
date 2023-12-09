@@ -22,7 +22,7 @@ const testimonialsList = [
     imageUrl: "/clients/client2.jpg",
   },
   {
-    name: "David Miller",
+    name: "Ana Miller",
     jobTitle: "Founder",
     content:
       "Exceptional service! The team went above and beyond to deliver a website that perfectly aligns with our brand identity. Their dedication to meeting deadlines and exceeding expectations is commendable.",

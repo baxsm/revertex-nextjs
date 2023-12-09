@@ -1,5 +1,6 @@
 import Background from "@/components/Background";
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
@@ -18,6 +19,7 @@ export default function Home() {
       <Portfolio />
       <Pricing />
       <Testimonials />
+      <Footer />
     </main>
   );
 }
