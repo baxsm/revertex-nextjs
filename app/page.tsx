@@ -12,14 +12,12 @@ export default function Home() {
   return (
     <main className="bg-background relative">
       <Background />
-      <Navbar />
       <Banner />
       <TrustedBusiness />
       <Service />
       <Portfolio />
       <Pricing />
       <Testimonials />
-      <Footer />
     </main>
   );
 }

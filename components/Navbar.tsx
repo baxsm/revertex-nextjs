@@ -9,7 +9,7 @@ import Logo from "./Logo";
 
 const Navbar: FC = ({}) => {
   return (
-    <nav className="sticky top-0 inset-x-0 w-full z-20 bg-background/[0.98] h-24 flex items-center border-b-[1px] border-border">
+    <nav className="sticky top-0 inset-x-0 w-full z-20 bg-background/[0.98] h-24 flex items-center border-b-[1px] border-gray-200/20">
       <MaxWidthWrapper>
         <div className="w-full flex justify-between items-center">
           <div className="">

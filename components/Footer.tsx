@@ -6,7 +6,7 @@ import Logo from "./Logo";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-background relative z-10 py-16 w-full h-full border-t-[1px] border-border">
+    <footer className="bg-background relative z-10 py-16 w-full h-full border-t-[1px] border-gray-200/20">
       <MaxWidthWrapper className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
         <Logo />
         <div className="flex flex-col gap-4">

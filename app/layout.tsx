@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import { cn } from "@/lib/utils";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +24,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={cn("antialiased scroll-smooth", poppins.className)}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
