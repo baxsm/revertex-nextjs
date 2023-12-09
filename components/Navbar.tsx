@@ -13,7 +13,7 @@ const Navbar: FC = ({}) => {
       <MaxWidthWrapper>
         <div className="w-full flex justify-between items-center">
           <div className="">
-            <Logo className="mt-0 text-2xl"/>
+            <Logo className="mt-0 text-2xl" vClassName="mt-2" />
           </div>
           <div className="items-center gap-8 hidden md:flex">
             <Link

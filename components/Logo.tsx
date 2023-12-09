@@ -6,9 +6,10 @@ import { FC } from "react";
 
 interface LogoProps {
   className?: string;
+  vClassName?: string;
 }
 
-const Logo: FC<LogoProps> = ({ className }) => {
+const Logo: FC<LogoProps> = ({ className, vClassName }) => {
   const router = useRouter();
 
   return (
@@ -20,7 +21,11 @@ const Logo: FC<LogoProps> = ({ className }) => {
       )}
     >
       Re
-      <span className="transform rotate-180 mt-3 text-indigo-500">v</span>
+      <span
+        className={cn("transform rotate-180 mt-3 text-indigo-500", vClassName)}
+      >
+        v
+      </span>
       ertex
       <span className="text-indigo-500">.</span>
     </div>

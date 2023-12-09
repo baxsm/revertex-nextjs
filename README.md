@@ -1,4 +1,5 @@
-# Revertex Next.js - Demo Landing Page
+# Revertex Next.js - Landing Page
+![Revertex Thumbnail](public/thumbnail.png)
 
 🚀 This is a demo landing page for a design agency that specializes in working with Webflow and Figma designs.
 
