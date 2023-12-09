@@ -29,7 +29,7 @@ const TrustedBusiness: FC = () => {
     <div className="relative z-10 py-28">
       <MaxWidthWrapper className="flex flex-col gap-0 items-center justify-center">
         <h5 className="text-base">Trusted by 30+ businesses</h5>
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 justify-between p-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 justify-between p-8">
           {logosList.map((logo, index) => {
             return (
               <article

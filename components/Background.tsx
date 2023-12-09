@@ -9,8 +9,8 @@ const Background: FC = () => {
         <div
           key={index}
           className={cn(
-            "w-1 flex-1 h-full bg-opacity-50",
-            index < 7 ? "border-[1px] border-gray-100/[0.02]" : ""
+            "w-1 flex-1 h-full bg-opacity-50 border-gray-100/[0.02]",
+            index < 5 ? "border-l-[1px] " : "border-[1px]"
           )}
         />
       ))}

@@ -5,6 +5,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
+import { Sparkle } from "lucide-react";
 
 const testimonialsList = [
   {
@@ -73,7 +74,10 @@ const Testimonials: FC = () => {
           <h5 className="text-sm text-indigo-400 uppercase tracking-[0.5em]">
             Testimonials
           </h5>
-          <h1 className="text-3xl font-medium">Our clients says</h1>
+          <h1 className="text-3xl font-medium">
+            Our clients says
+            <Sparkle className="w-8 h-8 fill-indigo-500 text-indigo-500 transform rotate-[30deg] inline-flex ml-8" />
+          </h1>
           <p className="text-sm text-muted-foreground max-w-prose">
             Don&apos;t take our word for it. Hear it from our happy clients
           </p>
@@ -84,15 +88,15 @@ const Testimonials: FC = () => {
           spaceBetween={80}
           slidesPerView={1}
           modules={[Pagination]}
-          pagination={{clickable: true}}
+          pagination={{ clickable: true }}
           className="overflow-visible"
           grabCursor
         >
           {testimonialsList.map((item, index) => {
             return (
-              <SwiperSlide key={index} className="px-12 lg:px-24">
+              <SwiperSlide key={index} className="px-0 lg:px-24">
                 <div className="w-full h-full border-[1px] border-gray-200/20 bg-zinc-800 bg-opacity-[0.4] rounded-xl">
-                  <div className="p-12 flex flex-col gap-8 items-center justify-center">
+                  <div className="p-8 md:p-12 flex flex-col gap-8 items-center justify-center">
                     <h5 className="text-base max-w-prose text-center">
                       &quot;{item.content}&quot;
                     </h5>
@@ -120,6 +124,30 @@ const Testimonials: FC = () => {
           })}
         </Swiper>
       </MaxWidthWrapper>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute right-0 top-8 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-12 opacity-30"
+      >
+        <div
+          style={{
+            clipPath:
+              "polygon(54.2% 37.8%, 100% 52.3%, 89.5% 29.7%, 78.5% 0.1%, 73.7% 1.8%, 67.5% 28.3%, 54.2% 61.2%, 47.4% 67.9%, 42.5% 59.3%, 40.2% 35.5%, 27.5% 74.7%, 0.1% 62.9%, 17.9% 100%, 27.6% 74.8%, 76.1% 95.7%, 54.2% 37.8%)",
+          }}
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-200 to-indigo-800 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[96.12rem]"
+        />
+      </div>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute right-0 top-8 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-12 opacity-10"
+      >
+        <div
+          style={{
+            clipPath:
+              "polygon(33.8% 14.2%, 100% 25.8%, 86.2% 11.4%, 74.2% 0.1%, 69.4% 1.8%, 62.5% 14.3%, 53.2% 31.2%, 47.4% 34.6%, 42.5% 29.8%, 40.2% 16.3%, 27.5% 37.5%, 0.1% 31.5%, 17.9% 50%, 27.6% 37.6%, 76.1% 49.9%, 33.8% 14.2%)",
+          }}
+          className="relative -right-[16rem] top-2 w-[45rem] aspect-[1684/678] -translate-x-1/2 rotate-[10deg] bg-gradient-to-tr from-indigo-200 to-indigo-800 opacity-30"
+        />
+      </div>
     </section>
   );
 };

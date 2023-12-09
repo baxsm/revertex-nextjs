@@ -15,7 +15,7 @@ const Navbar: FC = ({}) => {
           <div className="">
             <Logo className="mt-0 text-2xl"/>
           </div>
-          <div className="flex items-center gap-8">
+          <div className="items-center gap-8 hidden md:flex">
             <Link
               href="#"
               className="text-muted-foreground hover:text-indigo-400 duration-300"
