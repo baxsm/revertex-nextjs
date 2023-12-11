@@ -42,4 +42,4 @@ Explore the source code and contribute on GitHub: [Revertex Next.js GitHub Repo]
 
 ## Contributing
 
-🤝 Feel free to contribute to the project by opening issues or creating pull requests. We welcome your feedback and suggestions.
+🤝 Feel free to contribute to the project by opening issues or creating pull requests.
