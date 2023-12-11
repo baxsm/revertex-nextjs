@@ -6,6 +6,7 @@ import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Coupon from "@/components/Coupon";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("antialiased scroll-smooth", poppins.className)}>
+        <Coupon />
         <Navbar />
         {children}
         <Footer />
